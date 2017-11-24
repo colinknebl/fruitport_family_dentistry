@@ -1,0 +1,19 @@
+{
+  "name": "fruitport_family_dentistry_website",
+  "version": "1.0.0",
+  "description": "Website for Fruitport Family Dentistry",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colinknebl/fruitport_family_dentistry.git"
+  },
+  "author": "Colin Knebl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colinknebl/fruitport_family_dentistry/issues"
+  },
+  "homepage": "https://github.com/colinknebl/fruitport_family_dentistry#readme"
+}
