@@ -1,0 +1,29 @@
+<header class="lg-header">
+  <nav class="nav">
+    <span class="border"></span>
+    <ul class="nav-list">
+      <li class="nav-list-item"><a class="nav-list-item-link" routerLink="/">Home</a></li>
+      <li class="nav-list-item"><a class="nav-list-item-link" routerLink="/services">Services</a></li>
+      <li class="nav-list-item"><a class="nav-list-item-link" routerLink="/new-patient">New Patient</a></li>
+      <li class="nav-list-item"><a class="nav-list-item-link" routerLink="/education">Education</a></li>
+      <li class="nav-list-item"><a class="nav-list-item-link" routerLink="/office-tour">Office Tour</a></li>
+      <li class="nav-list-item"><a class="nav-list-item-link" routerLink="/meet-the-staff">Staff</a></li>
+    </ul>
+    <span class="border"></span>
+  </nav>
+</header>
+
+<header class="sm-header">
+  <h2 class="sm-menu-btn" (click)="navAction($event)">Menu &#9662;</h2>
+  <nav class="sm-nav" [class.hide]="isHiding">
+    <h2 class="sm-menu-close-btn" (click)="navAction($event)">Close &times;</h2>
+    <ul class="nav-list">
+      <li class="nav-list-item"><a class="nav-list-item-link" routerLink="/" (click)="navAction($event)">Home</a></li>
+      <li class="nav-list-item"><a class="nav-list-item-link" routerLink="/services" (click)="navAction($event)">Services</a></li>
+      <li class="nav-list-item"><a class="nav-list-item-link" routerLink="/new-patient" (click)="navAction($event)">New Patient</a></li>
+      <li class="nav-list-item"><a class="nav-list-item-link" routerLink="/education" (click)="navAction($event)">Education</a></li>
+      <li class="nav-list-item"><a class="nav-list-item-link" routerLink="/office-tour" (click)="navAction($event)">Office Tour</a></li>
+      <li class="nav-list-item"><a class="nav-list-item-link" routerLink="/meet-the-staff" (click)="navAction($event)">Staff</a></li>
+    </ul>
+  </nav>
+</header>

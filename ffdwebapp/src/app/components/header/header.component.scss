@@ -1,0 +1,111 @@
+@import '../../../assets/scss/variables';
+
+.sm-header {
+  display: none;
+}
+.lg-header {
+  // border: 2px solid red;
+  height: 10vh;
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .border {
+    border: 1.5px solid $blue;
+    border-radius: 25px;
+    width: 75%;
+    display: block;
+    margin: auto;
+  }
+  .nav  {
+    // border: 2px solid blue;
+    padding: 0;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-list {
+    // border: 2px solid green;
+    // border-top: 2px solid $blue;
+    // border-bottom: 2px solid $blue;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-list-item {
+    // border: 2px solid limegreen;
+    display: inline;
+    margin: .5rem 0;
+  }
+  .nav-list-item-link {
+    text-decoration: none;
+    color: $blue;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    &:hover, &:active {
+      border-bottom: 2px solid $blue;
+    }
+  }
+}
+// class="nav-list-item"><a class="nav-list-item-link"
+@media screen and (max-width: 850px) {
+  .lg-header {
+    display: none;
+  }
+  .sm-header {
+    margin: auto;
+    max-width: 90%;
+    height: 10vh;
+    display: flex;
+  }
+  .sm-menu-btn {
+    color: $blue;
+    width: 100%;
+    margin: auto;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+  .sm-nav {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .nav-list-item {
+      list-style-type: none;
+      text-align: center;
+      margin-bottom: .5rem;
+    }
+    .nav-list-item-link {
+      color: $blue;
+      text-decoration: none;
+      font-size: 1.75rem;
+    }
+  }
+  .sm-menu-close-btn {
+    color: $blue;
+    background: white;
+    width: 90%;
+    margin: auto;
+    height: 10vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.hide {
+  display: none !important;
+}

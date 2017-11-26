@@ -1,0 +1,74 @@
+@import '../../../assets/scss/variables',
+        '../../../assets/scss/extensions',
+        '../../../assets/scss/main-classes';
+
+.new-patient-jumbotron {
+  background: {
+    image: url('https://robertsondentalgroup.com/wp-content/uploads/2015/12/newpatientspecial-e1449210536484.jpg');
+    position: center;
+    size: cover;
+  }
+}
+
+.welcome {
+  max-width: $max-width;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+.new-patient-section-header {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid $blue;
+  display: inline-block;
+}
+.welcome-letter {
+  margin-bottom: 2rem;
+}
+.welcome-letter-list-item {
+  margin: 1rem 2rem;
+}
+
+
+.dl-forms-section-container {
+  margin-top: 2rem;
+}
+.dl-forms-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
+.forms-btn {
+  width: 100%;
+  background: $blue;
+  color: white;
+  padding: 1rem;
+  margin-top: .5rem;
+  font-size: 1.2rem;
+  letter-spacing: $letter-spacing;
+  cursor: pointer;
+  border: 4px solid $blue;
+  border-radius: 0px;
+  outline: none;
+  transition: background .25s, color .25s;
+  &:hover, &:active {
+    background: lightgrey;
+    color: $blue;
+  }
+}
+@media screen and (max-width: 786px) {
+  .dl-forms-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

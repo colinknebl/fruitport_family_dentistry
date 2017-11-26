@@ -1,0 +1,11 @@
+@import '../../../assets/scss/variables',
+        '../../../assets/scss/extensions',
+        '../../../assets/scss/main-classes';
+
+.index-section-jumbotron {
+  background: {
+    image: url('https://static.pexels.com/photos/305564/pexels-photo-305564.jpeg');
+    position: center;
+    size: cover;
+  }
+}

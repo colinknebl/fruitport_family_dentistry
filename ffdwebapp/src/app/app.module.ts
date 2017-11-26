@@ -1,14 +1,49 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { HttpModule } from '@angular/http';
 
+// COMPONENTS
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+
+// PAGES
+import { IndexComponent } from './pages/index/index.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { NewPatientComponent } from './pages/new-patient/new-patient.component';
+import { MeetTheStaffComponent } from './pages/meet-the-staff/meet-the-staff.component';
+import { EducationComponent } from './pages/education/education.component';
+import { OfficeTourComponent } from './pages/office-tour/office-tour.component';
+
+
+// ROUTES
+const appRoutes:Routes = [
+  {path:'', component:IndexComponent},
+  {path:'services', component:ServicesComponent},
+  {path:'new-patient', component:NewPatientComponent},
+  {path:'meet-the-staff', component:MeetTheStaffComponent},
+  {path:'education', component:EducationComponent},
+  {path:'office-tour', component:OfficeTourComponent}
+];
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IndexComponent,
+    ServicesComponent,
+    NewPatientComponent,
+    MeetTheStaffComponent,
+    EducationComponent,
+    OfficeTourComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

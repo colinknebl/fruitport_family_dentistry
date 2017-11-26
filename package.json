@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/colinknebl/fruitport_family_dentistry/issues"
   },
-  "homepage": "https://github.com/colinknebl/fruitport_family_dentistry#readme"
+  "homepage": "https://github.com/colinknebl/fruitport_family_dentistry#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }

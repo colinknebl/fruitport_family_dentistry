@@ -1,0 +1,78 @@
+@import '../../../assets/scss/variables';
+
+footer {
+  background: $blue;
+  padding: 3rem 0;
+  color: whitesmoke;
+  .footer-content-container {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-section-header {
+    letter-spacing: 1.5px;
+    margin-bottom: 1.5rem;
+  }
+}
+.footer-links {
+  .footer-nav-list-item {
+    list-style-type: none;
+    margin-bottom: .4rem;
+  }
+  .footer-nav-list-item-link {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+}
+.footer-office-info {
+  .footer-office-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .hours {
+    margin-bottom: 2rem;
+  }
+}
+.footer-office-location {
+  address {
+    margin-bottom: .5rem;
+
+  }
+  .footer-map {
+    border: 0;
+    width: 300px;
+    height: 225px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  footer {
+    .footer-content-container {
+      width: 60%;
+      text-align: center;
+      display: flex;
+      flex-direction: column; 
+    }
+    .footer-section{
+      border-bottom: 2px solid whitesmoke;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      &:last-of-type {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  footer {
+    .footer-content-container {
+      width: 90%;
+    }
+  }
+}

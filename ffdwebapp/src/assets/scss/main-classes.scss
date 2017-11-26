@@ -1,0 +1,39 @@
+.main-section {
+  margin: auto;
+  width: 90%;
+  color: $blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.jumbotron {
+  margin: 0 auto 3rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 80vh;
+  margin: 4vh auto 6vh auto;
+}
+
+.jumbotron-content-container {
+  background: rgba(255,255,255,0.5);
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  // margin-top: 8rem;
+}
+
+.jumbotron-header {
+  text-align: center;
+  font-size: 4rem;
+  color: $blue;
+  letter-spacing: 3px;
+}
+
+.main-border {
+  border: 1.5px solid $blue;
+  border-radius: 25px;
+  width: 55%;
+  display: block;
+  margin: auto;
+}

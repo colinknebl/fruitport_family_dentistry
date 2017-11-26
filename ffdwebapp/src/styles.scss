@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/scss/variables';
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+:root {
+  font: {
+    size: 18px;
+    family: 'Questrial', sans-serif;
+  }
+  letter-spacing: $letter-spacing;
+  line-height: $line-height;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

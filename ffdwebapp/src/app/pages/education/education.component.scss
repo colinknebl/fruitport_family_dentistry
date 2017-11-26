@@ -1,0 +1,33 @@
+@import '../../../assets/scss/variables',
+        '../../../assets/scss/extensions',
+        '../../../assets/scss/main-classes';
+
+.education-section-jumbotron {
+  background: {
+    image: url('http://europa.rs/wp-content/uploads/2016/11/obrazovanje-702x336.jpg');
+    position: center;
+    size: cover;
+  }
+}
+
+.education-links {
+  margin-bottom: 3rem;
+}
+.education-links-header {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid $blue;
+  display: inline-block;
+}
+.education-links-list {
+  list-style-position: inside;
+  text-indent: -24px; 
+  margin-left: 20px;
+}
+.education-link-list-item {
+  text-decoration: none;
+  color: $blue;
+  
+  &:hover, &:active {
+    border-bottom: 2px solid $blue;
+  }
+}
