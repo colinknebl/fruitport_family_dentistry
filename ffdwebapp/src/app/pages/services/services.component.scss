@@ -4,42 +4,26 @@
 
 .services-section-jumbotron {
   background: {
-    image: url('http://aadentalclinic.com/wp-content/uploads/2012/08/dental-services.png');
+    image: url('../../../assets/images/dental-tools.jpg');
     position: center;
     size: cover;
   }
 }
-.services-grid {
+
+
+.services-links {
+  width: 100%;
   max-width: $max-width;
   margin: auto;
   margin-bottom: 3rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
 }
-.article-card {
-  color: $blue;
-  text-align: center;
-}
-.article-card-img {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  display: block;
-  margin: auto;
-}
-.article-card-header {
+.services-links-header {
+  margin-bottom: 1rem;
   border-bottom: 2px solid $blue;
   display: inline-block;
-  margin: 1rem auto;
 }
-@media screen and (max-width: 1100px) {
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 720px) {
-  .services-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
+.services-links-list {
+  list-style-position: inside;
+  text-indent: -24px; 
+  margin-left: 20px;
 }

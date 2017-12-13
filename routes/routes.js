@@ -5,13 +5,13 @@ const express = require('express'),
 
 // INDEX ROUTE
 router.get('/', (req, res) => {
-  res.sendFile(directoryName + '/public/dist/index.html');
+  res.sendFile(directoryName + '/ffdwebapp/dist/index.html');
 });
 
 
 // CATCH ALL OTHER ROUTES AND SEND THE INDEX ROUTE
 router.get('*', (req, res) => {
-  res.sendFile(directoryName + 'public/dist/index.html');
+  res.redirect('/');
 });
 
 module.exports = router;

@@ -4,14 +4,19 @@
 
 .education-section-jumbotron {
   background: {
-    image: url('http://europa.rs/wp-content/uploads/2016/11/obrazovanje-702x336.jpg');
+    image: url('../../../assets/images/education-banner.jpg');
     position: center;
     size: cover;
   }
 }
 
+.education-main-section {
+  max-width: $max-width;
+  margin: auto;
+}
+
 .education-links {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .education-links-header {
   margin-bottom: 1rem;
@@ -30,4 +35,8 @@
   &:hover, &:active {
     border-bottom: 2px solid $blue;
   }
+}
+
+.disclaimer {
+  margin-bottom: 3rem;
 }

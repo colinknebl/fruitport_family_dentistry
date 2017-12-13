@@ -1,0 +1,39 @@
+@import '../../../assets/scss/variables',
+        '../../../assets/scss/extensions',
+        '../../../assets/scss/main-classes';
+
+.office-tour-jumbotron {
+  background: {
+    image: url('https://previews.123rf.com/images/adam121/adam1211205/adam121120500179/13805464-constraction-still-life-Stock-Photo.jpg');
+    position: center;
+    size: cover;
+  }
+}
+
+.education-main-section {
+  max-width: $max-width;
+  margin: auto;
+}
+
+
+h3 {
+  // border: 2px solid red;
+  margin-bottom: 2rem;
+}
+
+
+.office-tour-links {
+  max-width: $max-width;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+.office-tour-links-header {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid $blue;
+  display: inline-block;
+}
+.office-tour-links-list {
+  list-style-position: inside;
+  text-indent: -24px; 
+  margin-left: 20px;
+}

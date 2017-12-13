@@ -4,7 +4,7 @@
 
 .new-patient-jumbotron {
   background: {
-    image: url('https://robertsondentalgroup.com/wp-content/uploads/2015/12/newpatientspecial-e1449210536484.jpg');
+    image: url('../../../assets/images/new-pt.jpg');
     position: center;
     size: cover;
   }
@@ -25,6 +25,13 @@
 }
 .welcome-letter-list-item {
   margin: 1rem 2rem;
+}
+.docs-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 20px;
 }
 
 

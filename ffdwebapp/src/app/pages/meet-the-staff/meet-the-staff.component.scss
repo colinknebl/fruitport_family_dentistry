@@ -12,14 +12,40 @@
 
 .staff-section-jumbotron {
   background: {
-    image: url('../../../assets/images/dentist1.jpg');
+    image: url('../../../assets/images/staff-banner.jpg');
     position: center;
-    size: cover;
+    size: 100%;
+    // repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 850px) {
+  .staff-section-jumbotron {
+    background: {
+      image: url('../../../assets/images/new-pt.jpg');
+      size: 100% auto;
+      // repeat: no-repeat;
+    }
   }
 }
 .staff {
   max-width: $max-width;
   margin: auto;
+}
+.doc-grp {
+  // border: 2px solid red;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: row;
+  // justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.doc {
+  // border: 2px solid aqua;
+  width: 48%;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
 }
 .staff-group {
   // border: 2px solid red;
@@ -29,26 +55,61 @@
   justify-content: space-between;
 }
 .staff-img {
+  height: auto;
   max-height: 300px;
   max-width: 500px;
+  border-radius: 20px;
+}
+.doc-img {
+  border-radius: 20px;
+  height: auto;
+  max-height: 300px;
+  width: auto;
+  max-width: 200px;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.doc-para {
+  
 }
 .staff-para {
-  // border: 2px solid green;
   margin-left: 5rem;
-  color: $blue;
-  .staff-grp-header {
-    border-bottom: 2px solid $blue;
-    display: inline-block;
-    margin-bottom: 1rem;
-  }
   p {
     margin-bottom: 1rem;
   }
 }
+.staff-grp-header {
+  border-bottom: 2px solid $blue;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.doc-grp-header {
+  border-bottom: 2px solid $blue;
+  margin-bottom: 1rem;
+  display: block;
+  // justify-content: center;
+  text-align: center;
+}
 
 @media screen and (max-width: 1130px) {
+  .doc-grp {
+    flex-direction: column;
+  }
+  .doc {
+    width: 100%;
+    &:first-of-type {
+      margin-bottom: 10vh;
+    }
+  }
   .staff-group {
     flex-direction: column;
+  }
+  .staff-grp-header {
+    border-bottom: 2px solid $blue;
+    text-align: center;
+    display: block;
+    margin-bottom: 1rem;
   }
   .staff-img {
     margin: auto;

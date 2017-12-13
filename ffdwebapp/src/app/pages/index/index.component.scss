@@ -4,8 +4,31 @@
 
 .index-section-jumbotron {
   background: {
-    image: url('https://static.pexels.com/photos/305564/pexels-photo-305564.jpeg');
+    image: url('../../../assets/images/chair.jpg');
     position: center;
     size: cover;
+  }
+}
+
+.docs-name {
+  margin-top: .5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.diamond {
+  margin: 0 1rem;
+}
+
+@media screen and (max-width: 850px) {
+  .diamond {
+    display: none;
+  }
+
+  .docs-name {
+    flex-direction: column;
   }
 }
