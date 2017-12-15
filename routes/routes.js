@@ -1,11 +1,11 @@
 const express = require('express'),
-      router  = express.Router(),
-      directoryName = __dirname.slice(0, __dirname.length - 6);
+      router  = express.Router();
+      directory = __dirname.slice(0, __dirname.length - 6);
 
 
 // INDEX ROUTE
 router.get('/', (req, res) => {
-  res.sendFile(directoryName + '/ffdwebapp/dist/index.html');
+  res.sendFile(directory + '/ffdwebapp/dist/index.html');
 });
 
 
