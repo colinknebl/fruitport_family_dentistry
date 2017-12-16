@@ -5,7 +5,7 @@ const express = require('express'),
 
 // INDEX ROUTE
 router.get('/', (req, res) => {
-  res.sendFile(directory + '/ffdwebapp/dist/index.html');
+  res.sendFile(directory + 'ffd/ffdwebapp/dist/index.html');
 });
 
 
