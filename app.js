@@ -9,7 +9,7 @@ const express       = require('express'),
 // app.use(middleware);
 
 // POINT STATIC PATH TO DIST FOLDER
-app.use(express.static(path.join(__dirname, '/ffd/ffdwebapp/dist')));
+app.use(express.static(path.join(__dirname, '/ffdwebapp/dist')));
 
 // REGISTER API AND ROUTES
 app.use(routes);
