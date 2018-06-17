@@ -8,6 +8,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SpecialEventPopupComponent } from './components/special-event-popup/special-event-popup.component';
 
 // PAGES
 import { IndexComponent } from './pages/index/index.component';
@@ -39,7 +40,8 @@ const appRoutes:Routes = [
     EducationComponent,
     OfficeTourComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SpecialEventPopupComponent
   ],
   imports: [
     BrowserModule,

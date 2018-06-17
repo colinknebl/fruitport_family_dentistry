@@ -66,6 +66,16 @@
     grid-template-columns: 1fr;
   }
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  .dl-forms-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .dl-forms {
+    width: 45%;
+  }
+}
 
 
 

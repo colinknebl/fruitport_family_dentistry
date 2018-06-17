@@ -2,11 +2,7 @@ const express       = require('express'),
       app           = express(),
       path          = require('path'),
       http          = require('http'),
-      middleware    = require('./middleware/middleware'),
       routes        = require('./routes/routes');
-
-// MIDDLEWARE
-// app.use(middleware);
 
 // POINT STATIC PATH TO DIST FOLDER
 app.use(express.static(path.join(__dirname, '/ffdwebapp/dist')));
@@ -14,7 +10,7 @@ app.use(express.static(path.join(__dirname, '/ffdwebapp/dist')));
 // REGISTER API AND ROUTES
 app.use(routes);
 
-// GET PORT FROM ENIRONMENT AND STORE IN EXPRESS
+// GET PORT FROM ENVIRONMENT AND STORE IN EXPRESS
 const port = process.env.PORT || '5000';
 app.set('port', port);
 
